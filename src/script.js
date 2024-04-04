@@ -12,5 +12,10 @@ let dot=document.getElementsByClassName
 
 }
 
-for(i=0;i<image.length; i++)
-images[i]
+// hide all the images
+for (i = 0; i < images.length; i++) 
+images[i].style.display = "none";
+
+// remove the active class from the dot
+for (i = 0; i < dots.length; i++) 
+dots[i].className = dots[i].className.replace(" active", "");
