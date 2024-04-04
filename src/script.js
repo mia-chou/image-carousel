@@ -11,3 +11,6 @@ let dot=document.getElementsByClassName
 ("dot")
 
 }
+
+for(i=0;i<image.length; i++)
+images[i]
