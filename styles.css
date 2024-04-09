@@ -1,20 +1,42 @@
-.slider{
-position: relative;
-width: 100%;
-margin: auto;
-overflow: hidden;
+.slider {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  display: inline-block; /* Ensure the slider wraps around the images */
+  position: relative; /* Ensure absolute positioning of buttons relative to slider */
 }
 
-.slider img{
-width: 100%;
-display: none;
-
+.slider img {
+  width: 100%; /* Adjusted width for images */
+  display: none;
 }
 
+img.displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
+.prev {
+  left: 0;
+}
 
-
+.next {
+  right: 0;
+}
 
 
 
